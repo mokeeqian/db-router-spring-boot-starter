@@ -78,7 +78,7 @@ public class DynamicMybatisPlugin implements Interceptor {
         String replacedSql = matcher.replaceAll(tableName + "_" + RouterContext.getTableKey());
 
         // 反射修改SQL
-        Field sqlField = boundSql.getSql().getClass().getDeclaredField("sql");
+        Field sqlField = boundSql.getClass().getDeclaredField("sql");
         sqlField.setAccessible(true);
         sqlField.set(boundSql, replacedSql);
         sqlField.setAccessible(false);

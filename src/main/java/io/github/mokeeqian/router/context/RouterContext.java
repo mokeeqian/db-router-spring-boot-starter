@@ -23,7 +23,7 @@ public class RouterContext {
     }
 
     public static void setTableKey(String tableKey) {
-        DATABASE_KEY.set(tableKey);
+        TABLE_KEY.set(tableKey);
     }
 
     public static void clearDatabaseKey() {
