@@ -28,6 +28,11 @@ public class RouterAspect {
 
     private IRouterStrategy routerStrategy;
 
+    public RouterAspect(RouterConfig routerConfig, IRouterStrategy routerStrategy) {
+        this.routerConfig = routerConfig;
+        this.routerStrategy = routerStrategy;
+    }
+
     /**
      * 切点，拦截 @DBRouter
      */
