@@ -14,16 +14,16 @@ public class RouterContext {
         return DATABASE_KEY.get();
     }
 
-    public static void setDatabaseKey(String dbKey) {
-        DATABASE_KEY.set(dbKey);
+    public static void setDatabaseKey(String databaseKey) {
+        DATABASE_KEY.set(databaseKey);
     }
 
     public static String getTableKey() {
         return TABLE_KEY.get();
     }
 
-    public static void setTableKey(String tbKey) {
-        DATABASE_KEY.set(tbKey);
+    public static void setTableKey(String tableKey) {
+        DATABASE_KEY.set(tableKey);
     }
 
     public static void clearDatabaseKey() {

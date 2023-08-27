@@ -15,6 +15,7 @@ public @interface DBRouter {
 
     /**
      * 路由字段
+     *
      * @return
      */
     String key() default "";
