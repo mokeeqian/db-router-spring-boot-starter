@@ -78,12 +78,15 @@ public class RouterAspect {
      * @return
      */
     private String parseRouterKeyFieldValue(String fieldName, Object[] args) {
+        // 入参是 字段属性值
         if (args.length == 1) {
             Object arg = args[0];
             if (arg instanceof String) {
                 return arg.toString();
             }
         }
+
+        // 从入参里解析出字段属性值
         String fieldValue = null;
         for (Object arg : args) {
             try {
